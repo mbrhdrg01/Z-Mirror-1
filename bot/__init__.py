@@ -548,10 +548,10 @@ except KeyError:
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Z-Mirror'
+        TITLE_NAME = 'MalluMovies'
 except KeyError:
-    log_info('TITLE_NAME not entered; using Z-Mirror')
-    TITLE_NAME = 'Z-Mirror'
+    log_info('TITLE_NAME not entered; using MalluMovies')
+    TITLE_NAME = 'MalluMovies'
 try:
     AUTO_DELETE_UPLOAD_MESSAGE_DURATION = int(getConfig('AUTO_DELETE_UPLOAD_MESSAGE_DURATION'))
 except KeyError:
@@ -577,8 +577,8 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided..! Using default @Z-Mirror")
-    CHANNEL_USERNAME = "Z-Mirror"
+    log_info("CHANNEL_USERNAME not provided..! Using default @MM_Filtertopm_bot)
+    CHANNEL_USERNAME = "MM_Filtertopm_bot"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
