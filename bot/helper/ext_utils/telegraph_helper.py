@@ -75,7 +75,7 @@ class TelegraphHelper:
         return
 
 try:
-    telegraph=TelegraphHelper(f'{TITLE_NAME}', 'https://github.com/Dawn-India/Z-Mirror')
+    telegraph=TelegraphHelper(f'{TITLE_NAME}', 'https://t.me/+QejYBZ45iek0Y2Nk')
 except Exception as err:
     LOGGER.warning(f"Can't Create Telegraph Account: {err}")
     telegraph = None
