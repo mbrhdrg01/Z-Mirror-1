@@ -577,15 +577,15 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided..! Using default @MM_Filtertopm_bot)
-    CHANNEL_USERNAME = "MM_Filtertopm_bot"
+    log_info("CHANNEL_USERNAME not provided..! Using default @MalluMoviesChannels)
+    CHANNEL_USERNAME = "MalluMoviesChannels"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @Z-Mirror")
+    log_info("CHANNEL_ID not provided! Using default id of @MalluMoviesChannels)
     FSUB_CHANNEL_ID = -1001232292892
 
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
