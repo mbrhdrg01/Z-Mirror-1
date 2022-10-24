@@ -577,7 +577,7 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided..! Using default @MalluMoviesChannels)
+    log_info("CHANNEL_USERNAME not provided..! Using default @MalluMoviesChannels")
     CHANNEL_USERNAME = "MalluMoviesChannels"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
