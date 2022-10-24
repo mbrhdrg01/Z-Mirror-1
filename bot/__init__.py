@@ -515,15 +515,15 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided! Using default @z_mirror")
-    CHANNEL_USERNAME = "Z_Mirror"
+    log_info("CHANNEL_USERNAME not provided! Using default @MalluMoviesChannels")
+    CHANNEL_USERNAME = "MalluMoviesChannels"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @Z_Mirror")
+    log_info("CHANNEL_ID not provided! Using default id of @MalluMoviesChannels")
     FSUB_CHANNEL_ID = -1001232292892
 try:
     AUTO_MUTE = getConfig('AUTO_MUTE')
@@ -547,9 +547,9 @@ except KeyError:
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Z-Mirror'
+        TITLE_NAME = 'MalluMovies'
 except KeyError:
-    TITLE_NAME = 'Z-Mirror'
+    TITLE_NAME = 'MalluMovies'
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
