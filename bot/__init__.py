@@ -585,7 +585,7 @@ try:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @MalluMoviesChannels)
+    log_info("CHANNEL_ID not provided! Using default id of @MalluMoviesChannels")
     FSUB_CHANNEL_ID = -1001232292892
 
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
